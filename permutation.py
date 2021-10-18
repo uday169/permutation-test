@@ -12,6 +12,8 @@ def stringPermutation(string, i=0):
 
 
 def permutation(nums):
+    # Remove space from list
+    nums = ' '.join(nums).split()
     # checking given list is numbers or string
     mynewlist = [s for s in nums if s.isdigit()]
     if len(mynewlist) == 0:
@@ -36,7 +38,7 @@ def permutation(nums):
                 res.append([rem] + per)
         return res
 
-data = list('123') #input ABC, AB C , 123
+data = list('123 ') #input ABC, AB C , 123
 # printing the each permutation
 for p in permutation(data):
     print(p)
