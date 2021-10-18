@@ -1,0 +1,1 @@
+Python code file of permutatiom of string and numbers
